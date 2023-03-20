@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1320px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 헤더 네비 */
+
+header{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 90;
+}
+.header_inner{
+    width: 90%;
+    max-width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_inner img{
+    display: inline-block;
+}
+.nav{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+.nav> li> a{
+    display: block;
+    font-size: 20px;
+    padding: 17px 30px;
+    position: relative;
+    z-index: 4;
+    font-family: 'Pretendard-Light';
+}
+.nav> li> a> span{
+    display: block;
+    width: 75px;
+    height: 12px;
+    background-color: #f1edff;
+    position: absolute;
+    top: 23px;
+    left: 24px;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: transform 0.7s;
+}
+.nav> li:nth-child(2)> a> span{
+    width: 102px;
+}
+.nav> li:nth-child(3)> a> span{
+    width: 71px;
+}
+.nav> li:hover> a> span{
+    transform: scaleX(1);
+}
+
+.nav> li{
+    position: relative;
+}
+.sub{
+    position: absolute;
+    width: 100%;
+    top: 57px;
+    text-align: center;
+    z-index: 10;
+    display: none;
+}
+.sub> li> a{
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    border-top: #f5f4f9 1px solid;
+}
+.sub> li> a:hover{
+    color: #8b72c9;
+}
+.nav> li:hover .sub{
+    display: block;
+}
+
+/* 배너 */
+.banner {
+    width: 100%;
+    height: 334px;
+    margin-top: 58px;
+    background: url(./brand_img/banner.jpg) no-repeat 50% 50%; 
+}
+
+/* 섹션1 */
+
+.section1{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.section1_inner{
+    width: 1320px;
+    height: 1300px;
+    margin: 100px auto;
+    position: relative;
+}
+h1{
+    font-size: 40px;
+    font-family: 'KBIZHanmaumMyungjo';
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+.text_left{
+    position: absolute;
+    top: 320px;
+    left: 100px;
+}
+.text_left h2{
+    text-align: left;
+    border-bottom: 1px solid #e5c7de;
+    font-size: 40px;
+    font-family: 'HallymMjo-Regular';
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.text_left p{
+    text-align: left;
+    font-size: 25px;
+    line-height: 38px;
+    font-family: 'Pretendard-Light';
+}
+.text_right{
+    position: absolute;
+    top: 760px;
+    right: 50px;
+}
+.text_right h2{
+    text-align: right;
+    border-bottom: 1px solid #b4bdd8;
+    font-size: 40px;
+    font-family: 'HallymMjo-Regular';
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.text_right p{
+    text-align: right;
+    font-size: 25px;
+    line-height: 38px;
+    font-family: 'Pretendard-Light';
+}
+
+.bg_box{
+    text-align: center;
+    width: 100%;
+    height: 550px;
+    background: url(./brand_img/bg.png) no-repeat fixed;
+}
+.bg_box h2{
+    font-size: 40px;
+    font-family: 'NanumMyeongjoBold';
+    padding: 200px 0 50px;
+    letter-spacing: -2px;
+}
+.bg_box p{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+/* 섹션2 */
+
+.section2{
+    width: 100%;
+    overflow: hidden;
+}
+.section2_inner{
+    width: 1320px;
+    height: 2280px;
+    margin: 50px auto;
+    position: relative;
+}
+.section2 h1{
+    line-height: 50px;
+    text-align: center;
+    margin: 130px 0; 
+}
+.pink{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1620px;
+    position: absolute;
+    top: 230px;
+    left: -290px;
+}
+.pinkbox{
+    width: 960px;
+    height: 574px;
+    background: url(./brand_img/pink_bg.jpg) no-repeat;
+}
+.pinkbox h2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    color: #e087ad;
+    padding-left: 300px;
+    padding-top: 130px;
+}
+.pinkbox h3{
+    font-family: 'KBIZHanmaumMyungjo';
+    font-size: 40px;
+    line-height: 50px;
+    padding: 50px 0 50px 300px;
+    position: relative;
+    z-index: 5;
+}
+.pinkbox p{
+    font-size: 26px;
+    line-height: 37px;
+    padding-left: 300px;
+}
+.pinkbox span{
+    width: 320px;
+    height: 20px;
+    background-color: #ecb8d0;
+    position: absolute;
+    top: 70px;
+    left: 290px;
+    z-index: -1;
+}
+.purple{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1620px;
+    position: absolute;
+    top: 930px;
+    right: -290px;
+}
+.purplebox{
+    text-align: right;
+    width: 960px;
+    height: 574px;
+    background: url(./brand_img/purple_bg.jpg) no-repeat;
+}
+.purplebox h2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    color: #ac89db;
+    padding-right: 300px;
+    padding-top: 130px;
+}
+.purplebox h3{
+    font-family: 'KBIZHanmaumMyungjo';
+    font-size: 40px;
+    line-height: 50px;
+    padding: 50px 300px 50px 0;
+    position: relative;
+    z-index: 5;
+}
+.purplebox p{
+    font-size: 26px;
+    line-height: 37px;
+    padding-right: 300px;
+}
+.purplebox span{
+    width: 330px;
+    height: 20px;
+    background-color: #cbb9e4;
+    position: absolute;
+    top: 70px;
+    right: 330px;
+    z-index: -1;
+}
+.blue{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1620px;
+    position: absolute;
+    top: 1630px;
+    left: -290px;  
+}
+.bluebox{
+    width: 960px;
+    height: 574px;
+    background: url(./brand_img/blue_bg.jpg) no-repeat;
+}
+.bluebox h2{
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    color: #79ace8;
+    padding-left: 300px;
+    padding-top: 130px;
+}
+.bluebox h3{
+    font-family: 'KBIZHanmaumMyungjo';
+    font-size: 40px;
+    line-height: 50px;
+    padding: 50px 0 50px 300px;
+    position: relative;
+    z-index: 5;
+}
+.bluebox p{
+    font-size: 26px;
+    line-height: 37px;
+    padding-left: 300px;
+}
+.bluebox span{
+    width: 280px;
+    height: 20px;
+    background-color: #b8cfea;
+    position: absolute;
+    top: 70px;
+    left: 290px;
+    z-index: -1;
+}
+
+/* 섹션3 위치 */
+.section3{
+    width: 100%;
+    background: url(./brand_img/location_bg.jpg) no-repeat;
+    text-align: center;
+    padding: 80px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.section3 h1{
+    font-size: 50px;
+    font-family: 'Pretendard-Regular';
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+.section3> h4{
+    font-family: 'Pretendard-Light';
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+.section3_inner{
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+}
+.map{
+    box-sizing: border-box;
+    width: 560px;
+    height: 570px;
+    padding: 60px;
+    border-radius: 50px;
+    background: url(./brand_img/location_icon1.png) no-repeat 15% 90% #fff;
+}
+.map> h4{
+    margin: 20px 0 0 50px;
+    padding-top: 12px;
+    font-family: 'Pretendard-Light';
+    font-size: 25px;
+    font-weight: 300;
+}
+.come{
+    box-sizing: border-box;
+    width: 560px;
+    height: 570px;
+    padding: 60px;
+    border-radius: 50px;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+}
+.come h3{
+    font-size: 38px;
+    margin: 10px 0 60px;
+}
+.come h5{
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 300;
+    background: url(./brand_img/location_icon2.png) no-repeat 15% 50%;
+    margin: 30px 0;
+    padding-left: 20px;
+}
+.come h5:nth-child(4){
+    background: url(./brand_img/location_icon3.png) no-repeat 15% 50%;
+}
+.come p{
+    font-family: 'Pretendard-ExtraLight';
+    word-spacing: -2px;
+    background-color: #e1e3ef;
+    line-height: 40px;
+    border-radius: 50px;
+    margin: 12px 0;
+    font-size: 21px;
+    box-sizing: border-box;
+}
+
+
+/* 푸터 */
+footer{
+    margin: auto;
+    background-color: #f5f4f9;
+    text-align: center;
+}
+.footer_inner{
+    margin: auto;
+    padding: 50px;
+}
+footer ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Pretendard-Light';
+    font-size: 15px;
+}
+footer p{
+    margin-top: 20px;
+    font-family: 'Pretendard-Light';
+    font-size: 15px;
+}
+footer a{
+    display: block;
+    margin: 0 20px;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: #555;
+}

@@ -1,0 +1,37 @@
+
+#input_div{
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 10px;
+}
+#input_div th{
+    padding: 15px 0;
+    text-align: left;
+    font-size: 22px;
+}
+#input_div td{
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+#input_div input{
+    border: none;
+    width: 100px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+#input_div #minus, #input_div #plus{
+    background-color: #ccc;
+    width: 25px;
+}
+#input_div #count, #input_div #total_count_view{
+    text-align: center;
+}
+#input_div #total_count_view{
+    font-weight: bold;
+    font-size: 22px;
+}
+#input_div tr:nth-child(1){
+    display: none;
+}

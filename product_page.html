@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+    <link href="./brand_img/icon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+    <title>CLASS</title>
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="./css/font.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/order.css">
+
+    <!-- 내 css -->
+    <link rel="stylesheet" href="./product_page_style.css">
+</head>
+
+<body>
+
+    <!-- 헤더 네비 -->
+    <header>
+        <div class="header_inner">
+            <a href="./index.html"><img src="./main_img/logo.png" alt="로고"></a>
+            <ul class="nav">
+                <li><a href="./brand.html">BRAND<span></span></a></li>
+                <li><a href="./product.html">PRODUCT<span></span></a></li>
+                <li><a href="./event.html">EVENT<span></span></a></li>
+                <li><a href="./class1.html">CLASS<span></span></a>
+                    <ul class="sub">
+                        <li><a href="./class1.html">클래스 소개</a></li>
+                        <li><a href="./class2.html">클래스 예약</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 섹션1 -->
+    <div class="title">
+        <div class="img">
+            <img src="./product_img/product_title.jpg" alt="제품이미지">
+        </div>
+        <div class="text">
+            <h1>
+                센티드 시그니처 <br>
+                체리블라썸 포스프링 <span>(50ml)</span>
+            </h1>
+            <h2>55,000원</h2>
+            <p>센티드 시그니처 봄 에디션 <br>
+                봄을 알리는 벚꽃을 가득 담은 ‘체리 블라썸’<br>
+                <br>
+                체리 블라썸과 함께 봄을 만나보세요
+            </p>
+            <div class="box">
+                <table id="input_div">
+                    <tr>
+                        <th>가격</th>
+                        <td><input type="text" value="55000" id="total_count"></td>
+                    </tr>
+                    <tr>
+                        <th>수량</th>
+                        <td>
+                            <input type="button" value="-" id="minus" onclick="minus()">
+                            <input type="text" size="25" value="1" id="count">
+                            <input type="button" value="+" id="plus" onclick="plus()">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>합계</th>
+                        <td> <input type="text" value="55,000" id="total_count_view"></td>
+                    </tr>
+                </table>
+                <a href="#">장바구니 담기</a>
+                <a href="#">바로 구매</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 상세페이지 -->
+    <div class="page">
+        <img src="./product_img/page1.jpg" alt="상세1">
+        <img src="./product_img/page2.jpg" alt="상세2">
+        <img src="./product_img/page3.jpg" alt="상세3">
+        <img src="./product_img/page4.jpg" alt="상세4">
+        <img src="./product_img/page5.jpg" alt="상세5">
+        <img src="./product_img/page6.jpg" alt="상세6">
+    </div>
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_inner">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사업자정보안확인</a></li>
+            </ul>
+            <a href="#"><img src="./main_img/logo.png" alt="하단로고"></a>
+            <p>법인명 : 센티드 대표자 : 이혜진<br>
+                사업자등록번호 : 809-99-99999 대표전화 : 1699 - 9999<br>
+                주소 : 부산광역시 수영구 광안동 99번길 9<br>
+                <br>
+                Copyright ⓒ SCENTED All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!-- 제이쿼리 라이브러리-->
+    <script src="./script/order.js"></script>
+</body>
+
+</html>

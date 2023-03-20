@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+    <link href="./main_img/icon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+    <title>SCENTED</title>
+
+    <link rel="stylesheet" href="./css/font.css">
+
+    <!-- 슬라이드 css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /><!--수정X-->
+    <link href="css/slidebanner.css" rel="stylesheet" type="text/css"><!--디자인에 맞게 수정-->
+
+    <!-- 흘러가는 섹션 -->
+    <link rel="stylesheet" href="css/jquery.simplyscroll.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- 내 css -->
+    <link rel="stylesheet" href="./index_style.css">
+
+</head>
+
+<body>
+    <!-- 헤더 네비 -->
+    <header>
+        <div class="header_inner">
+            <a href="./index.html"><img src="./main_img/logo.png" alt="로고"></a>
+            <ul class="nav">
+                <li><a href="./brand.html">BRAND<span></span></a></li>
+                <li><a href="./product.html">PRODUCT<span></span></a></li>
+                <li><a href="./event.html">EVENT<span></span></a></li>
+                <li><a href="./class1.html">CLASS<span></span></a>
+                    <ul class="sub">
+                        <li><a href="./class1.html">클래스 소개</a></li>
+                        <li><a href="./class2.html">클래스 예약</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="banner">
+        <!-- 슬라이드 구문 -->
+        <div class="swiper-container slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="./main_img/main1.jpg" alt="메인배너1"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./main_img/main2.jpg" alt="메인배너2"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./main_img/main3.jpg" alt="메인배너3"></a>
+                </div>
+            </div>
+            <!-- 화살표 버튼 -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- 블릿 버튼 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- 섹션1 브랜드 소개 -->
+    <div id="section1">
+        <div>
+            <h1>Scent for</h1>
+            <img src="./main_img/text1.jpg" alt="텍스트1" class="text1" data-aos="fade-right" data-aos-delay="300">
+            <img src="./main_img/section1_img1.jpg" alt="브랜드 이미지1" class="img1" data-aos="fade-left"
+                data-aos-delay="500">
+            <img src="./main_img/section1_img2.jpg" alt="브랜드 이미지2" class="img2" data-aos="fade-right"
+                data-aos-delay="1000">
+            <img src="./main_img/text2.jpg" alt="텍스트2" class="text2" data-aos="fade-left" data-aos-delay="200">
+        </div>
+    </div>
+
+    <!-- 섹션2 베스트 -->
+    <div id="section2">
+        <h1 data-aos="fade-down">Best Product</h1>
+        <ul id="scroller">
+            <li><a href="./product.html"><img src="./main_img/best1.png" alt="베스트1">
+                    <h2>Cherry Blossom</h2>
+                    <p>시그니처 For Spring</p>
+                    <h3>55,000 won</h3>
+                </a></li>
+            <li><a href="./product.html"><img src="./main_img/best2.png" alt="베스트2">
+                    <h2>Cotton Musk</h2>
+                    <p>시그니처 For Winter</p>
+                    <h3>55,000 won</h3>
+                </a></li>
+            <li><a href="./product.html"><img src="./main_img/best3.png" alt="베스트3">
+                    <h2>On Midnight</h2>
+                    <p>오리지널 For YOU</p>
+                    <h3>55,000 won</h3>
+                </a></li>
+            <li><a href="./product.html"><img src="./main_img/best4.png" alt="베스트4">
+                    <h2>Starry Night</h2>
+                    <p>오리지널 For YOU</p>
+                    <h3>55,000 won</h3>
+                </a></li>
+            <li><a href="./product.html"><img src="./main_img/best1.png" alt="베스트1">
+                    <h2>Cherry Blossom</h2>
+                    <p>시그니처 For Spring</p>
+                    <h3>55,000 won</h3>
+                </a></li>
+            <li><a href="./product.html"><img src="./main_img/best2.png" alt="베스트2">
+                    <h2>Cotton Musk</h2>
+                    <p>시그니처 For Winter</p>
+                    <h3>55,000 won</h3>
+                </a></li>
+            <li><a href="./product.html"><img src="./main_img/best3.png" alt="베스트3">
+                    <h2>On Midnight</h2>
+                    <p>오리지널 For YOU</p>
+                    <h3>55,000 won</h3>
+                </a></li>
+            <li><a href="./product.html"><img src="./main_img/best4.png" alt="베스트4">
+                    <h2>Starry Night</h2>
+                    <p>오리지널 For YOU</p>
+                    <h3>55,000 won</h3>
+                </a></li>
+        </ul>
+    </div>
+
+    <!-- 섹션3 -->
+    <div class="section3">
+        <div class="section3_pos">
+            <div class="left_box"></div>
+            <h1 data-aos="fade-right">Meet <br>
+                Scented</h1>
+            <h4 data-aos="fade-right">센티드를 경험해보세요</h4>
+
+            <div class="section3_inner">
+                <div class="section3_con" data-aos="fade-left" data-aos-delay="400">
+                    <a href="./brand.html"><img src="./main_img/sec3_1.png" alt="브랜드스토리"></a>
+                    <h2>Your Scent</h2>
+                    <p>나만을 위한 향, 센티드의 이야기</p>
+                </div>
+                <div class="section3_con" data-aos="fade-left" data-aos-delay="800">
+                    <a href="./product.html"><img src="./main_img/sec3_2.png" alt="컬렉션"></a>
+                    <h2>사계절 컬렉션</h2>
+                    <p>계절을 담은 센티드의 사계절 컬렉션을 통해 <br>
+                        일상에 향기로움을 더해보세요</p>
+                </div>
+                <div class="section3_con" data-aos="fade-left" data-aos-delay="1200">
+                    <a href="#"><img src="./main_img/sec3_3.png" alt="조향클래스"></a>
+                    <h2>For Me, My Scent</h2>
+                    <p>나의 향을 못 찾고 있다면 <br>
+                        직접 나만의 향을 만들어보세요</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 중간배너 -->
+    <div class="m_banner">
+        <a href="#"><img src="./main_img/middle_banner1.jpg" alt="중간배너1"></a>
+        <a href="#"><img src="./main_img/middle_banner2.jpg" alt="중간배너2"></a>
+    </div>
+
+
+    <!-- 섹션4 -->
+    <div class="section4">
+        <h1>SNS</h1>
+        <p>@scented99_</p>
+        <p>센티드에서 제공하는 원데이 클래스를 통해 <br>
+            나만의 향을 만들어보세요</p>
+        <ul class="sns_img">
+            <li><img src="./main_img/sns1.jpg" alt="sns1"></li>
+            <li><img src="./main_img/sns2.jpg" alt="sns2"></li>
+            <li><img src="./main_img/sns3.jpg" alt="sns3"></li>
+            <li><img src="./main_img/sns4.jpg" alt="sns4"></li>
+            <li><img src="./main_img/sns5.jpg" alt="sns5"></li>
+            <li><img src="./main_img/sns6.jpg" alt="sns6"></li>
+            <li><img src="./main_img/sns7.jpg" alt="sns7"></li>
+            <li><img src="./main_img/sns8.jpg" alt="sns8"></li>
+        </ul>
+    </div>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_inner">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사업자정보안확인</a></li>
+            </ul>
+            <a href="./index.html"><img src="./main_img/logo.png" alt="하단로고"></a>
+            <p>법인명 : 센티드 대표자 : 이혜진<br>
+                사업자등록번호 : 809-99-99999 대표전화 : 1699 - 9999<br>
+                주소 : 부산광역시 수영구 광안동 99번길 9<br>
+                <br>
+                Copyright ⓒ SCENTED All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- 제이쿼리 -->
+
+    <!-- 슬라이드 js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!-- 제이쿼리 라이브러리,수정X -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script><!-- 수정X -->
+    <script src="script/slidebanner.js"></script><!--디자인에 맞게 수정-->
+
+    <!-- 흘러가는 섹션 -->
+    <script src="script/jquery.simplyscroll.min.js"></script>
+    <script src="script/simplyscroll.js"></script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+    <script src="script/aos.js"></script><!-- aos 소스 -->
+</body>
+
+</html>

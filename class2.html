@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1400"><!--다른 매체에서도 너비 오류 없이 볼 수 있게-->
+    <link href="./brand_img/icon.png" rel="icon" type="image/png" sizes="32x32"><!--파비콘-->
+    <title>CLASS</title>
+
+    <!-- 폰트 -->
+    <link rel="stylesheet" href="./css/font.css">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+
+    <!-- 날짜 css -->
+    <link rel="stylesheet" href="./css/datepicker.min.css">
+
+    <!-- 내 css -->
+    <link rel="stylesheet" href="./class2_style.css">
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+
+<body>
+
+    <!-- 헤더 네비 -->
+    <header>
+        <div class="header_inner">
+            <a href="./index.html"><img src="./main_img/logo.png" alt="로고"></a>
+            <ul class="nav">
+                <li><a href="./brand.html">BRAND<span></span></a></li>
+                <li><a href="./product.html">PRODUCT<span></span></a></li>
+                <li><a href="./event.html">EVENT<span></span></a></li>
+                <li><a href="./class1.html">CLASS<span></span></a>
+                    <ul class="sub">
+                        <li><a href="./class1.html">클래스 소개</a></li>
+                        <li><a href="./class2.html">클래스 예약</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 배너 -->
+    <div class="banner"></div>
+
+    <!-- 소개 및 예약 -->
+    <div class="tab">
+        <a href="./class1.html">클래스소개</a>
+        <a href="./class2.html">클래스예약<span></span></a>
+    </div>
+
+
+    <!-- 섹션1 -->
+    <div class="title">
+        <h2>예약하기<span class="under"></span></h2>
+    </div>
+    <div class="reserv">
+        <div class="left">
+            <div>
+                <a href="#">〈 </a>
+                <h3>2023. 03 </h3>
+                <a href="#">〉</a>
+            </div>
+            <h5>예약가능</h5>
+            <h5>예약불가능</h5>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="form">
+            <div>
+                <ul class="date">
+                    <li>
+                        <h2>날짜</h2>
+                        <input id="datepicker1" type="date" placeholder="원하는 날짜를 선택해 주세요." value="2023-03-10">
+                    </li>
+                    <li>
+                        <h2>시간</h2>
+                        <select name="time" id="time">
+                            <option value="10:00">10:00</option>
+                            <option value="15:00">15:00</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h2>인원</h2>
+                        <input type="button" value="-" id="minus" onclick="minus()">
+                        <input type="text" size="25" value="1" id="count">
+                        <input type="button" value="+" id="plus" onclick="plus()">
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="btn">클래스 신청하기</a>
+        </div>
+    </div>
+
+    <!-- 섹션2 -->
+    <div class="info_title">
+        <h2>안내사항 및 유의사항<span class="under"></span></h2>
+    </div>
+
+    <div class="info">
+        <div class="info_left">
+            <ul class="info_icon">
+                <li>
+                    <img src="./class_img/info_icon1.png" alt="안내아이콘1">
+                    <p>와이파이를<br>
+                        제공합니다</p>
+                </li>
+
+                <li>
+                    <img src="./class_img/info_icon2.png" alt="안내아이콘2">
+                    <p>주차장이<br>
+                        마련되어 있습니다</p>
+                </li>
+                <li>
+                    <img src="./class_img/info_icon3.png" alt="안내아이콘3">
+                    <p>시설 내에서는<br>
+                        금연입니다</p>
+                </li>
+
+                <li>
+                    <img src="./class_img/info_icon4.png" alt="안내아이콘4">
+                    <p>포토존이<br>
+                        있습니다</p>
+                </li>
+
+                <li>
+                    <img src="./class_img/info_icon5.png" alt="안내아이콘5">
+                    <p>감시카메라가<br>
+                        작동 중입니다</p>
+                </li>
+
+                <li>
+                    <img src="./class_img/info_icon6.png" alt="안내아이콘6">
+                    <p>아이동반<br>
+                        가능합니다</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info_right">
+            <p>시설 내 흡연, 음식물반입을 금지합니다</p>
+            <p>시간 미준수로 인한 불이익은 책임지지 않습니다</p>
+            <h3><span>※</span> 환불안내</h3>
+            <p>클래스 개강일 5일 이전 : 전액 환불</p>
+            <p>클래스 개강일 5일 ~ 2일 전 : 90% 환불</p>
+            <p>클래스 개강일 1일 전 : 60% 환불</p>
+            <p>클래스 당일 ~ 클래스 이후 : 환불불가능</p>
+        </div>
+    </div>
+    <!-- 푸터 -->
+    <footer>
+        <div class="footer_inner">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">사업자정보안확인</a></li>
+            </ul>
+            <a href="#"><img src="./main_img/logo.png" alt="하단로고"></a>
+            <p>법인명 : 센티드 대표자 : 이혜진<br>
+                사업자등록번호 : 809-99-99999 대표전화 : 1699 - 9999<br>
+                주소 : 부산광역시 수영구 광안동 99번길 9<br>
+                <br>
+                Copyright ⓒ SCENTED All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- 제이쿼리 -->
+
+    <!-- 예약하기js -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/datepicker.min.js"></script>
+    <script src="./js/datepicker.ko.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./script/order.js"></script>
+
+</body>
+
+</html>
